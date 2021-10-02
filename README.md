@@ -1,4 +1,3 @@
-![login output](https://user-images.githubusercontent.com/91774730/135706176-b6e90e3d-a99c-4e43-b949-bf0c2f9cdf3b.jpg)
 from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk, Image
@@ -54,3 +53,6 @@ login = Button(root, text="Log In", font=("Ariel 22 bold"),
                width=8, bg="blue", fg='#FFC331', relief=FLAT, command=new)
 canvas.create_window(270, 290, anchor="nw", window=login)
 root.mainloop()
+
+![login output](https://user-images.githubusercontent.com/91774730/135706176-b6e90e3d-a99c-4e43-b949-bf0c2f9cdf3b.jpg)
+
