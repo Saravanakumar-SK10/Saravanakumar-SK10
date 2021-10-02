@@ -21,8 +21,9 @@ def new():
     elif user_entry.get() == "Saravanakumar" and password_entry.get() == "1901210":
         root.withdraw()
         paswd.set("")
-        new_window = Toplevel(root)
+      
 
+        new_window = Toplevel(root)
         def home_page():
             new_window.withdraw()
             root.deiconify()
@@ -32,9 +33,9 @@ def new():
         home.pack(padx=30, pady=30)
     else:
         messagebox.showinfo("Login System", "Please enter the correct Username and Password")
+        canvas = Canvas(root, width=width, height=height, bd=0, highlightthickness=0)
 
 
-canvas = Canvas(root, width=width, height=height, bd=0, highlightthickness=0)
 canvas.pack(fill=BOTH, expand=True)
 canvas.create_image(0, 0, image=bg, anchor='nw')
 label = Label(root, text="Login Page", font=("Ariel 25 bold"), bg='#5500FF', fg='white')
@@ -55,4 +56,3 @@ canvas.create_window(270, 290, anchor="nw", window=login)
 root.mainloop()
 
 ![login output](https://user-images.githubusercontent.com/91774730/135706176-b6e90e3d-a99c-4e43-b949-bf0c2f9cdf3b.jpg)
-
